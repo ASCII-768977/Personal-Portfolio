@@ -8,9 +8,6 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [showMenu, setShowMenu] = useState(false);
 
-
-
-
   return (
     <nav
       className={`${styles.paddingX} w-full flex justify-between items-center py-5 fixed top-0 z-20 bg-primary`}
