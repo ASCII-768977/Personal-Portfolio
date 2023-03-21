@@ -25,11 +25,12 @@ const Navbar = () => {
           <p className="text-white text-[18px] font-bold cursor-pointer md:flex">
             Forrest &nbsp;
             <span className="sm:block hidden">| Full Stack Developer</span>
+            
           </p>
         </Link>
-        
+
         <ul className="hidden sm:flex flex-row gap-10">
-          {navLinks.map((link) => (
+          {navLinks.map((link,index) => (
             <li
               key={link.id}
               className={`${
@@ -55,7 +56,7 @@ const Navbar = () => {
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-star flex-col gap-4">
-              {navLinks.map((link) => (
+              {navLinks.map((link,index) => (
                 <li
                   key={link.id}
                   className={`${

@@ -25,6 +25,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  icon1,
+  icon2,
+  icon3,
 } from "../assets";
 
 const navLinks = [
@@ -268,6 +271,30 @@ const projects = [
   },
 ];
 
+const footerIcons = [
+  {
+    name: "linkedIn",
+    link: "https://www.linkedin.com/in/forrest-lin",
+    icon: icon1,
+  },
+  {
+    name: "github",
+    link: "https://github.com/ASCII-768977",
+    icon: icon2,
+  },
+  {
+    name: "instagram",
+    link: "https://www.instagram.com/forrest_lin_/",
+    icon: icon3,
+  },
+];
+
+const toRotateText = [
+  "Stay Enthusiastic",
+  "Solution Focused",
+  "High Efficiency",
+];
+
 export {
   navLinks,
   services,
@@ -275,4 +302,6 @@ export {
   experiences,
   testimonials,
   projects,
+  toRotateText,
+  footerIcons,
 };
