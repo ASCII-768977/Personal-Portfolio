@@ -11,6 +11,7 @@ import {
   Works,
   StarsCanvas,
   Footer,
+  ExpandCard,
 } from "./components";
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
+        <ExpandCard />
         <Feedbacks />
         <div className="relative z-0">
           <Contact />

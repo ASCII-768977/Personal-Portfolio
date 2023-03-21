@@ -64,6 +64,10 @@
   background-color: #333;
 }
 
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
