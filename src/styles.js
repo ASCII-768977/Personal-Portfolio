@@ -13,11 +13,12 @@ const styles = {
   sectionSubText:
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
 
-  mask: {
-    width: "100%",
-    WebkitMaskImage: "linear-gradient(#eaeaea transparent)",
-    maskImage: "linear-gradient(#eaeaea, transparent)",
-  },
+  // mask: {
+  //   width: "100%",
+  //   WebkitMaskImage: "linear-gradient(#eaeaea transparent)",
+  //   maskImage: "linear-gradient(#eaeaea, transparent)",
+  // },
+
 };
 
 export { styles };

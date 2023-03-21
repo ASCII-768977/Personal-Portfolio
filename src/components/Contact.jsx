@@ -79,7 +79,7 @@ const Contact = () => {
               className="bg-tertiary py-4 px-6 placeholder:text-secondary rounded-lg text-white outlined-none border-none font-medium"
             />
           </label>
-          <label htmlFor="name" className="flex flex-col">
+          <label htmlFor="email" className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Email</span>
             <input
               type="text"
@@ -90,7 +90,7 @@ const Contact = () => {
               className="bg-tertiary py-4 px-6 placeholder:text-secondary rounded-lg text-white outlined-none border-none font-medium"
             />
           </label>
-          <label htmlFor="name" className="flex flex-col">
+          <label htmlFor="message" className="flex flex-col">
             <span className="text-white font-medium mb-4">Your message</span>
             <textarea
               row="7"

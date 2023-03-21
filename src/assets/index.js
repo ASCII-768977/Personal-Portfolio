@@ -35,6 +35,10 @@ import blackLogoPNG from "./blackLogoPNG.png";
 import blackLogoSVG from "./blackLogoSVG.svg";
 import colorLogo from "./colorLogo.png";
 
+import icon1 from "./icon1.svg";
+import icon2 from "./icon2.svg";
+import icon3 from "./icon3.svg";
+
 export {
   logo,
   backend,
@@ -68,4 +72,7 @@ export {
   blackLogoPNG,
   blackLogoSVG,
   colorLogo,
+  icon1,
+  icon2,
+  icon3,
 };
