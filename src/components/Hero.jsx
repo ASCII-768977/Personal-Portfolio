@@ -2,9 +2,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
-import { headerImg } from "../assets/index";
-import TrackVisibility from "react-on-screen";
-
 
 const Hero = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -64,10 +61,11 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText}`}>
-            Hi, I'm
+            Hi, I'm&nbsp;
             <span className="text-[#915eff] whitespace-nowrap">Forrest</span>
           </h1>
-          <p>I am a&nbsp;
+          <p className="">
+            I am a&nbsp;
             <span
               className="txt-rotate"
               dataPeriod="1000"
@@ -75,7 +73,6 @@ const Hero = () => {
             >
               <span className="wrap">{text}</span>
             </span>
-            
           </p>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I am a <span className="text-[#915eff]">Human Being </span>first,
