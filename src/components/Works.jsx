@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
@@ -15,6 +15,24 @@ const ProjectCard = ({
   image,
   source_code_link,
 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const maxWords = 70;
+
+  const handleToggle = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  const descriptionWithDots = description
+    .split(" ")
+    .slice(0, maxWords)
+    .join(" ")
+    .concat("...");
+
+  const str =
+    "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.locate available jobs based on their current location. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Web-based platform";
+
+  console.log(str.length);
+
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
@@ -23,7 +41,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full min-h-[660px] relative"
       >
         <div className="relative w-full h-[230px]">
           <img
@@ -46,12 +64,27 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-5 flex flex-col">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+          <p className="mt-2 text-secondary text-[14px]">
+            {description.length > 500
+              ? isExpanded
+                ? description
+                : descriptionWithDots
+              : description}
+          </p>
+
+          {description.split(" ").length > maxWords && (
+            <button
+              onClick={handleToggle}
+              className="bg-secondary py-3 px-3 text-white font-bold shadow-md shadow-primary rounded-xl w-fit-content my-3 view-more"
+            >
+              {isExpanded ? "View less" : "View more"}
+            </button>
+          )}
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-wrap gap-2 absolute bottom-0.5 ">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
