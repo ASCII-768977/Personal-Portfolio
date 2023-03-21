@@ -59,6 +59,11 @@
     hue-rotate(346deg) brightness(95%) contrast(86%);
 }
 
+.view-more:hover {
+  color: #eee;
+  background-color: #333;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
