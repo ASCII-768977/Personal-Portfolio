@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
-import { navLinks } from "../constants";
+import { navLinks } from "../constants/index";
 import { celloLogo, menu, close } from "../assets";
 
 const Navbar = () => {
@@ -27,7 +27,8 @@ const Navbar = () => {
             <span className="sm:block hidden">| Full Stack Developer</span>
           </p>
         </Link>
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        
+        <ul className="hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -40,6 +41,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={showMenu ? close : menu}
@@ -47,7 +49,6 @@ const Navbar = () => {
             className="w-[28px] h-[28px] object-contain cursor-pointer"
             onClick={() => setShowMenu(!showMenu)}
           />
-
           <div
             className={`${
               !showMenu ? "hidden" : "flex"
