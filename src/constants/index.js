@@ -127,11 +127,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Shopify",
+    title: "Startup Founder",
+    company_name: "Only 4 U",
     icon: shopify,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "January 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -140,11 +140,11 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
+    title: "Full Stack Developer",
     company_name: "Snooper",
     icon: snooper,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2022 - Apr 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -153,7 +153,7 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     company_name: "Unimelb",
     icon: unimelb,
     iconBg: "#383E56",
@@ -166,7 +166,7 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
+    title: "Web Designer",
     company_name: "BJUT",
     icon: bjut,
     iconBg: "#E6DEDD",
@@ -182,28 +182,29 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    testimonial: "Stay hungry.<br /> Stay foolish.",
+    name: "Steve Jobs",
+    designation: "Co-founder, CEO of",
+    company: "Apple",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg/1920px-Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "I am a human being first,<br /> a musician second,<br /> a cellist third.",
+    name: "Yo Yo Ma",
+    designation: "World Famous ",
+    company: "Cellist",
+    image:
+      "https://yt3.googleusercontent.com/ytc/AL5GRJX_x5sSBD4OiBOZrkGBZlKgbJzMfGN29rE5_u2A=s900-c-k-c0x00ffffff-no-rj",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    testimonial: "Run, Forrest! <br /> Run!",
+    name: "Forrest Gump",
+    designation: "Movie released ",
+    company: "in 1994",
+    image:
+      "http://cdn.shopify.com/s/files/1/1210/0178/products/41tc4K5iy9L_600x.jpg?v=1578027714",
   },
 ];
 
