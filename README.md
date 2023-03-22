@@ -1,8 +1,10 @@
 # Personal Portfolio
+### ***You can visit the website here: https://forrest-lin.com***
 
-This is a personal portfolio website for showcasing the work and skills of Forrest Lin. You can visit the website at [https://forrest-lin.com](https://forrest-lin.com).
+This is a personal portfolio website for showcasing the work and skills of Forrest Lin.
 
-<img width="1280" alt="" src="">
+![My Portfolio Screenshot](public/screenshot.jpeg)
+
 
 ## Technologies Used
 
