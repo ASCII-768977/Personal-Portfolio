@@ -63,7 +63,7 @@ const Hobby = () => {
         autoPlay
         muted
         loop
-        className="h-[55vh] w-[100%] hidden md:block"
+        className="h-auto md:h-[55vh] w-[100%]"
       ></video>
       <div className="flex">
         {panelsData.map((panel, index) => (
