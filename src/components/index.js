@@ -13,7 +13,7 @@ import Works from "./Works";
 import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import Footer from "./Footer";
-import ExpandCard from "./ExpandCard";
+import ExpandCard from "./Hobby";
 
 export {
   Hero,

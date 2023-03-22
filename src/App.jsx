@@ -29,7 +29,7 @@ const App = () => {
         <Experience />
         <Tech />
         <Works />
-        {/* <ExpandCard /> */}
+        <ExpandCard />
         <Feedbacks />
         <div className="relative z-0">
           <Contact />

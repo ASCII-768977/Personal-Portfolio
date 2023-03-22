@@ -120,9 +120,13 @@
 
 .panel {
   transition: all 700ms ease-in;
+  flex: 0.5;
+
+  &.active {
+    flex: 5;
+  }
 
   h3 {
-    font-size: 2.5rem;
     opacity: 0;
   }
 

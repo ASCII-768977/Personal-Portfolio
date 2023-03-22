@@ -34,7 +34,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <div className="bg-about-pattern bg-auto bg-no-repeat bg-right">
+    <div className="bg-about-pattern md:bg-auto bg-no-repeat xl:bg-right bg-right-top max-md:bg-20% md:bg-40%">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>About Me</h2>
@@ -43,13 +43,15 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-        laudantium eaque nesciunt sit excepturi, odio temporibus. Eius,
-        architecto dolore at aliquid, unde magni, perspiciatis suscipit
-        distinctio et quia hic quae. Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit. In facilis rem doloremque corrupti inventore quod
-        consequatur minus nihil cumque architecto dicta sequi deserunt
-        laudantium delectus, odit ipsa vero facere veritatis.
+        Greetings! I am an ebullient full-stack developer with a Bachelor's
+        degree in Computer Science and a Master's degree in Information
+        Technology. My forte lies in optimizing team productivity by writing
+        elegant, readable, and maintainable code. As a seasoned mentor, I am an
+        avid learner and enjoy sharing my knowledge with others. I am highly
+        skilled in collaborating and communicating with cross-functional teams,
+        particularly in Agile/Scrum settings. In addition to programming, music
+        is my greatest passion. In my leisure time, I find joy in teaching the
+        cello and performing as a street busker.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (

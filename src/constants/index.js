@@ -18,8 +18,8 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
+  unimelb,
+  bjut,
   shopify,
   carrent,
   jobit,
@@ -28,6 +28,11 @@ import {
   icon1,
   icon2,
   icon3,
+  celloLogo,
+  cat1,
+  cat2,
+  cello1,
+  colorLogo,
 } from "../assets";
 
 const navLinks = [
@@ -127,7 +132,7 @@ const experiences = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
-    icon: starbucks,
+    icon: unimelb,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
@@ -140,7 +145,7 @@ const experiences = [
   {
     title: "React Native Developer",
     company_name: "Tesla",
-    icon: tesla,
+    icon: bjut,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
@@ -289,33 +294,29 @@ const footerIcons = [
   },
 ];
 
-  const panelsData = [
-    {
-      name: "Brisbane",
-      imageUrl:
-        "https://images.unsplash.com/photo-1589976567749-2f011d95ffec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
-    },
-    {
-      name: "Melbourne",
-      imageUrl:
-        "https://images.unsplash.com/photo-1514395462725-fb4566210144?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80",
-    },
-    {
-      name: "Sydney",
-      imageUrl:
-        "https://images.unsplash.com/photo-1548565494-3621affe632f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
-    },
-    {
-      name: "Canberra",
-      imageUrl:
-        "https://images.unsplash.com/photo-1510546020578-a35ae9fcfb0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2104&q=80",
-    },
-    {
-      name: "Adelaide",
-      imageUrl:
-        "https://images.unsplash.com/photo-1556628057-2196b9ef2233?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80",
-    },
-  ];
+const panelsData = [
+  {
+    name: "Sydney",
+    imageUrl:
+      "https://images.unsplash.com/photo-1548565494-3621affe632f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+  },
+  {
+    name: "Hugo",
+    imageUrl: `${cat1}`,
+  },
+  {
+    name: "Cello",
+    imageUrl: `${colorLogo}`,
+  },
+  {
+    name: "Sissy",
+    imageUrl: `${cat2}`,
+  },
+  {
+    name: "Adelaide",
+    imageUrl: `${cello1}`,
+  },
+];
 
 const toRotateText = [
   "Stay Enthusiastic",
