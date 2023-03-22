@@ -14,15 +14,54 @@ const Contact = () => {
     message: "",
   });
 
+  const [errors, setErrors] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
+    if (value) {
+      setErrors({ ...errors, [name]: "" });
+    }
+  };
+
+  const validateEmail = (email) => {
+    const regex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+    return regex.test(email);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    let hasErrors = false;
+
+    Object.keys(form).forEach((field) => {
+      if (!form[field]) {
+        setErrors((prevErrors) => ({
+          ...prevErrors,
+          [field]: `Please write down your ${field}`,
+        }));
+        hasErrors = true;
+      }
+    });
+
+    if (!validateEmail(form.email)) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        email: "Please using a valid email address",
+      }));
+      hasErrors = true;
+    }
+
+    if (hasErrors) {
+      return;
+    }
+
     setLoading(true);
 
     emailjs
@@ -54,6 +93,10 @@ const Contact = () => {
       );
   };
 
+  const getInputBorderClass = (field) => {
+    return errors[field] ? "border border-red-500" : "border-none";
+  };
+
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
@@ -78,6 +121,7 @@ const Contact = () => {
               placeholder="What's your name"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary rounded-lg text-white outlined-none border-none font-medium"
             />
+            {errors.name && <p className="text-red-500 mt-2">{errors.name}</p>}
           </label>
           <label htmlFor="email" className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Email</span>
@@ -89,6 +133,9 @@ const Contact = () => {
               placeholder="What's your email"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary rounded-lg text-white outlined-none border-none font-medium"
             />
+            {errors.email && (
+              <p className="text-red-500 mt-2">{errors.email}</p>
+            )}
           </label>
           <label htmlFor="message" className="flex flex-col">
             <span className="text-white font-medium mb-4">Your message</span>
@@ -101,6 +148,9 @@ const Contact = () => {
               placeholder="What do you want to say"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary rounded-lg text-white outlined-none border-none font-medium"
             />
+            {errors.message && (
+              <p className="text-red-500 mt-2">{errors.message}</p>
+            )}
           </label>
 
           <button

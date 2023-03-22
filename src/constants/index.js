@@ -127,11 +127,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Shopify",
+    title: "Startup Founder",
+    company_name: "Only 4 U",
     icon: shopify,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "January 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -140,11 +140,11 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
+    title: "Full Stack Developer",
     company_name: "Snooper",
     icon: snooper,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2022 - Apr 2022",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -153,7 +153,7 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
+    title: "Full Stack Developer",
     company_name: "Unimelb",
     icon: unimelb,
     iconBg: "#383E56",
@@ -166,7 +166,7 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
+    title: "Web Designer",
     company_name: "BJUT",
     icon: bjut,
     iconBg: "#E6DEDD",
@@ -183,7 +183,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -191,7 +191,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -199,7 +199,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     name: "Lisa Wang",
     designation: "CTO",
     company: "456 Enterprises",
