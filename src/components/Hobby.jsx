@@ -4,7 +4,7 @@ import { SectionWrapper } from "../hoc";
 import { panelsData } from "../constants/index";
 import { motion } from "framer-motion";
 import { fadeIn,textVariant } from "../utils/motion";
-import { celloPlay } from "../assets/index";
+import { earthVideo } from "../assets/index";
 
 const ExpandCard = ({
   name,
@@ -59,11 +59,10 @@ const Hobby = () => {
         </motion.p>
       </div>
       <video
-        src={celloPlay}
+        src={earthVideo}
         autoPlay
         muted
         loop
-        controls
         className="h-[55vh] w-[100%]"
       ></video>
       <div className="flex">

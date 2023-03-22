@@ -23,8 +23,8 @@ const Footer = () => {
 
         <div>
           <h3 className={styles.heroSubText}>Forrest Lin</h3>
-          <p>WeChat: ASCII-768977</p>
           <p>Email: forrest.lin.work@gmail.com</p>
+          <p>&copy; Copyright 2023. All Rights Reserved.</p>
         </div>
       </motion.div>
 
