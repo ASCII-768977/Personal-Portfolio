@@ -182,28 +182,29 @@ const experiences = [
 
 const testimonials = [
   {
-    testimonial:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    testimonial: "Stay hungry.<br /> Stay foolish.",
+    name: "Steve Jobs",
+    designation: "Co-founder, CEO of",
+    company: "Apple",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg/1920px-Steve_Jobs_Headshot_2010-CROP_%28cropped_2%29.jpg",
   },
   {
     testimonial:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "I am a human being first,<br /> a musician second,<br /> a cellist third.",
+    name: "Yo Yo Ma",
+    designation: "World Famous ",
+    company: "Cellist",
+    image:
+      "https://yt3.googleusercontent.com/ytc/AL5GRJX_x5sSBD4OiBOZrkGBZlKgbJzMfGN29rE5_u2A=s900-c-k-c0x00ffffff-no-rj",
   },
   {
-    testimonial:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    testimonial: "Run, Forrest! <br /> Run!",
+    name: "Forrest Gump",
+    designation: "Movie released ",
+    company: "in 1994",
+    image:
+      "http://cdn.shopify.com/s/files/1/1210/0178/products/41tc4K5iy9L_600x.jpg?v=1578027714",
   },
 ];
 
