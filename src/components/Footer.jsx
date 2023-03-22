@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import { icon1, icon2, icon3 } from "../assets";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
-import { slideIn, fadeIn } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
+import { footerIcons } from "../constants/index";
 
 const Footer = () => {
   return (
@@ -35,29 +36,21 @@ const Footer = () => {
         className="flex flex-col justify-center items-center gap-5"
       >
         <div className="flex gap-10 social-icon">
-          <Link
-            to="https://www.linkedin.com/in/forrest-lin"
-            target="_blank"
-            className="link"
-          >
-            <img src={icon1} alt="linkedin" />
-          </Link>
-          <Link
-            to="https://github.com/ASCII-768977"
-            target="_blank"
-            className="link"
-          >
-            <img src={icon2} alt="facebook" />
-          </Link>
-          <Link
-            to="https://www.instagram.com/forrest_lin_/"
-            target="_blank"
-            className="link"
-          >
-            <img src={icon3} alt="instagram" />
-          </Link>
+          {footerIcons.map((icon, index) => (
+            <Link
+              to={icon.link}
+              target="_blank"
+              className="link"
+              key={icon.name}
+            >
+              <img src={icon.icon} alt={icon.name} />
+            </Link>
+          ))}
         </div>
-        <p>Let's get in touch now !</p>
+        <div className="flex">
+          <div className="heart top-[0.6rem] right-[0.625rem]" />
+          <p>Let's get in touch now</p>
+        </div>
       </motion.div>
     </div>
   );

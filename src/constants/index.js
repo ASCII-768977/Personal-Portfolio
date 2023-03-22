@@ -18,13 +18,21 @@ import {
   figma,
   docker,
   meta,
-  starbucks,
-  tesla,
+  unimelb,
+  bjut,
   shopify,
   carrent,
   jobit,
   tripguide,
   threejs,
+  icon1,
+  icon2,
+  icon3,
+  celloLogo,
+  cat1,
+  cat2,
+  cello1,
+  colorLogo,
 } from "../assets";
 
 const navLinks = [
@@ -124,7 +132,7 @@ const experiences = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
-    icon: starbucks,
+    icon: unimelb,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
@@ -137,7 +145,7 @@ const experiences = [
   {
     title: "React Native Developer",
     company_name: "Tesla",
-    icon: tesla,
+    icon: bjut,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
@@ -268,6 +276,54 @@ const projects = [
   },
 ];
 
+const footerIcons = [
+  {
+    name: "linkedin",
+    link: "https://www.linkedin.com/in/forrest-lin",
+    icon: icon1,
+  },
+  {
+    name: "github",
+    link: "https://github.com/ASCII-768977",
+    icon: icon2,
+  },
+  {
+    name: "instagram",
+    link: "https://www.instagram.com/forrest_lin_/",
+    icon: icon3,
+  },
+];
+
+const panelsData = [
+  {
+    name: "Sydney",
+    imageUrl:
+      "https://images.unsplash.com/photo-1548565494-3621affe632f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+  },
+  {
+    name: "Hugo",
+    imageUrl: `${cat1}`,
+  },
+  {
+    name: "Cello",
+    imageUrl: `${colorLogo}`,
+  },
+  {
+    name: "Sissy",
+    imageUrl: `${cat2}`,
+  },
+  {
+    name: "Adelaide",
+    imageUrl: `${cello1}`,
+  },
+];
+
+const toRotateText = [
+  "Stay Enthusiastic",
+  "Solution Focused",
+  "High Efficiency",
+];
+
 export {
   navLinks,
   services,
@@ -275,4 +331,7 @@ export {
   experiences,
   testimonials,
   projects,
+  toRotateText,
+  footerIcons,
+  panelsData,
 };

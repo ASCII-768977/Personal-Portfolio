@@ -20,6 +20,13 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.png')",
+        "about-pattern": "url('/src/assets/headerImg.svg')",
+      },
+      backgroundSize: {
+        "20%": "20%",
+        "40%": "40%",
+        "60%": "60%",
+        "80%": "80%",
       },
     },
   },

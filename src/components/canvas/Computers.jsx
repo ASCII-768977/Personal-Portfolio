@@ -21,7 +21,7 @@ const Computers = ({ whichScreen: screenType }) => {
       <primitive
         object={computer.scene}
         scale={
-          screenType === "mobile" ? 0.5 : screenType === "tablet" ? 0.75 : 0.80
+          screenType === "mobile" ? 0.5 : screenType === "tablet" ? 0.60 : 0.70
         }
         position={
           screenType === "mobile"
