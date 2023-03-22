@@ -8,7 +8,7 @@ const styles = {
   heroSubText:
     "text-[#dfd9ff] font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
   heroRotateText:
-    "text-white font-black font-medium lg:text-[20px] sm:text-[16px] xs:text-[10px] text-[6px] lg:leading-[20px]",
+    "text-white font-black font-medium lg:text-[26px] sm:text-[22px] xs:text-[16px] text-[12px] lg:leading-[20px]",
 
   sectionHeadText:
     "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",

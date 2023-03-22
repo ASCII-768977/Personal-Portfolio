@@ -17,7 +17,7 @@ import {
   kotlin,
   figma,
   docker,
-  meta,
+  snooper,
   unimelb,
   bjut,
   shopify,
@@ -29,9 +29,6 @@ import {
   icon2,
   icon3,
   celloLogo,
-  cat1,
-  cat2,
-  cello1,
   colorLogo,
 } from "../assets";
 
@@ -131,8 +128,8 @@ const technologies = [
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: unimelb,
+    company_name: "Shopify",
+    icon: shopify,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
@@ -144,8 +141,8 @@ const experiences = [
   },
   {
     title: "React Native Developer",
-    company_name: "Tesla",
-    icon: bjut,
+    company_name: "Snooper",
+    icon: snooper,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
@@ -157,8 +154,8 @@ const experiences = [
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    company_name: "Unimelb",
+    icon: unimelb,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
@@ -170,8 +167,8 @@ const experiences = [
   },
   {
     title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    company_name: "BJUT",
+    icon: bjut,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
@@ -296,25 +293,29 @@ const footerIcons = [
 
 const panelsData = [
   {
-    name: "Sydney",
+    name: "Unimelb",
     imageUrl:
-      "https://images.unsplash.com/photo-1548565494-3621affe632f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+      "https://images.unsplash.com/photo-1514395462725-fb4566210144?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80",
   },
   {
     name: "Hugo",
-    imageUrl: `${cat1}`,
+    imageUrl:
+      "https://images.unsplash.com/photo-1629624467541-f73ef8f12df2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3387&q=80",
+  },
+  {
+    name: "Sydney",
+    imageUrl:
+      "https://images.unsplash.com/photo-1611927264378-faced7a32de9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80",
   },
   {
     name: "Cello",
-    imageUrl: `${colorLogo}`,
-  },
-  {
-    name: "Sissy",
-    imageUrl: `${cat2}`,
+    imageUrl:
+      "https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2231&q=80",
   },
   {
     name: "Adelaide",
-    imageUrl: `${cello1}`,
+    imageUrl:
+      "https://images.unsplash.com/photo-1548565494-3621affe632f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
 ];
 

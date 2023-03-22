@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -23,8 +22,9 @@ import threejs from "./tech/threejs.svg";
 import aws from "./tech/aws.png";
 import kotlin from "./tech/kotlin.png";
 
-import meta from "./company/meta.png";
+
 import shopify from "./company/shopify.png";
+import snooper from "./company/snooper.png";
 import unimelb from "./company/unimelb.png";
 import bjut from "./company/bjut.png";
 
@@ -42,14 +42,12 @@ import icon2 from "./icon2.svg";
 import icon3 from "./icon3.svg";
 
 import headerImg from "./headerImg.svg";
-import celloPlay from "./celloPlay.mp4";
+import earthVideo from "./earthVideo.mp4";
 
-import cat1 from "./cat1.jpg";
-import cat2 from "./cat2.jpg";
-import cello1 from "./cello1.jpg";
+
+
 
 export {
-  logo,
   backend,
   creator,
   mobile,
@@ -72,8 +70,9 @@ export {
   threejs,
   aws,
   kotlin,
-  meta,
+
   shopify,
+  snooper,
   unimelb,
   bjut,
   carrent,
@@ -87,8 +86,5 @@ export {
   icon2,
   icon3,
   headerImg,
-  celloPlay,
-  cat1,
-  cat2,
-  cello1,
+  earthVideo,
 };
