@@ -273,7 +273,7 @@ const projects = [
 
 const footerIcons = [
   {
-    name: "linkedIn",
+    name: "linkedin",
     link: "https://www.linkedin.com/in/forrest-lin",
     icon: icon1,
   },
@@ -288,6 +288,34 @@ const footerIcons = [
     icon: icon3,
   },
 ];
+
+  const panelsData = [
+    {
+      name: "Brisbane",
+      imageUrl:
+        "https://images.unsplash.com/photo-1589976567749-2f011d95ffec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
+    },
+    {
+      name: "Melbourne",
+      imageUrl:
+        "https://images.unsplash.com/photo-1514395462725-fb4566210144?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80",
+    },
+    {
+      name: "Sydney",
+      imageUrl:
+        "https://images.unsplash.com/photo-1548565494-3621affe632f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    },
+    {
+      name: "Canberra",
+      imageUrl:
+        "https://images.unsplash.com/photo-1510546020578-a35ae9fcfb0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2104&q=80",
+    },
+    {
+      name: "Adelaide",
+      imageUrl:
+        "https://images.unsplash.com/photo-1556628057-2196b9ef2233?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80",
+    },
+  ];
 
 const toRotateText = [
   "Stay Enthusiastic",
@@ -304,4 +332,5 @@ export {
   projects,
   toRotateText,
   footerIcons,
+  panelsData,
 };

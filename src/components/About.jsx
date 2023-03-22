@@ -34,8 +34,7 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <>
-      <img src={headerImg} alt="Header Img" className="z-[-1] absolute md:right-0.5"/>
+    <div className="bg-about-pattern bg-auto bg-no-repeat bg-right">
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>About Me</h2>
@@ -57,7 +56,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
