@@ -106,15 +106,20 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-secondary text-[17px] max-w-4xl leading-[30px]"
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-          unde beatae velit, tempora optio fuga est veniam temporibus enim esse
-          in eum commodi reprehenderit, inventore quam vitae aliquid deleniti
-          non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-          laudantium adipisci sit dignissimos, fugit, expedita asperiores
-          ducimus similique placeat tempore repudiandae. Consectetur aspernatur
-          labore voluptatibus vero delectus laudantium adipisci doloribus?
+          I truly enjoy the satisfaction that comes from programming. To date, I
+          have completed several full-stack projects and continuously update a
+          variety of interesting components using HTML, CSS, and JavaScript on
+          my Github profile. I love to challenge myself by exploring new
+          technologies and frameworks, and I'm constantly looking to expand my
+          skillset. 
+          <br /> In addition to these projects, I devote a portion of
+          my time to learning new frameworks and technologies that can enhance
+          my abilities as a programmer. I enjoy staying up-to-date with the
+          latest trends in the industry and seeking out new challenges to
+          overcome. Programming has become a passion for me, and I am always
+          eager to take on new projects and expand my knowledge in the field.
         </motion.p>
       </div>
 

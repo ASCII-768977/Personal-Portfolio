@@ -29,9 +29,9 @@ import unimelb from "./company/unimelb.png";
 import bjut from "./company/bjut.png";
 import jr from "./company/jr.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import tax from "./tax.png";
+import easygrade from "./easygrade.png";
+import aurin from "./aurin.png";
 
 import celloLogo from './celloLogo.jpg'
 import blackLogoPNG from "./blackLogoPNG.png";
@@ -76,9 +76,9 @@ export {
   unimelb,
   bjut,
   jr,
-  carrent,
-  jobit,
-  tripguide,
+  tax,
+  easygrade,
+  aurin,
   celloLogo,
   blackLogoPNG,
   blackLogoSVG,
