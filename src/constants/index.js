@@ -5,8 +5,8 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
+  kotlin,
+  vue,
   reactjs,
   redux,
   tailwind,
@@ -14,9 +14,8 @@ import {
   mongodb,
   git,
   aws,
-  kotlin,
-  figma,
-  docker,
+  nextjs,
+  spring,
   snooper,
   unimelb,
   bjut,
@@ -72,14 +71,6 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -92,6 +83,22 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Three JS",
+    icon: threejs,
+  },
+  {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
+    name: "Vue JS",
+    icon: vue,
+  },
+  {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -100,28 +107,21 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Kotlin",
+    icon: kotlin,
   },
+  {
+    name: "Spring Boot",
+    icon: spring,
+  },
+
   {
     name: "MongoDB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "aws",
+    name: "AWS",
     icon: aws,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
