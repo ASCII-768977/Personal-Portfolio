@@ -3,7 +3,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { panelsData } from "../constants/index";
 import { motion } from "framer-motion";
-import { fadeIn,textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 import { earthVideo } from "../assets/index";
 
 const ExpandCard = ({
@@ -15,7 +15,7 @@ const ExpandCard = ({
 }) => {
   return (
     <motion.div
-      variants={fadeIn("", "spring", index * 0.3, 0.5)}
+      variants={fadeIn("", "spring", index * 0.5, 0.75)}
       key={index}
       className={`panel bg-cover bg-center bg-no-repeat	h-[80vh] rounded-[50px] text-white cursor-pointer m-[10px] relative ${
         index === activePanel ? "active" : ""
@@ -49,13 +49,19 @@ const Hobby = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-          unde beatae velit, tempora optio fuga est veniam temporibus enim esse
-          in eum commodi reprehenderit, inventore quam vitae aliquid deleniti
-          non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-          laudantium adipisci sit dignissimos, fugit, expedita asperiores
-          ducimus similique placeat tempore repudiandae. Consectetur aspernatur
-          labore voluptatibus vero delectus laudantium adipisci doloribus?
+          Music has been a central part of my life since I was six, when I first
+          picked up a cello. Over the years, I've honed my skills and performed
+          with various symphony orchestras, even touring abroad to Spain and
+          Canada as a principal cellist. But music isn't just for the stage -
+          I've also played as a street performer, sharing my love of music with
+          anyone who happens by. In addition to my musical pursuits, I'm a
+          devoted pet owner and animal lover. My British Shorthair cat brings me
+          endless joy and companionship.
+          <br />
+          Lastly, I find programming and collaboration to be incredibly
+          rewarding. Clean code that can make a real difference in people's
+          lives is a passion of mine, and I'm always eager to work with others
+          who share that same drive.
         </motion.p>
       </div>
       <video

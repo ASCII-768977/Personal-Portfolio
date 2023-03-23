@@ -6,11 +6,11 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+import vue from "./tech/vue.png";
+import spring from "./tech/spring.png";
+import nextjs from "./tech/nextjs.png";
 import git from "./tech/git.png";
-import html from "./tech/html.png";
+import kotlin from "./tech/kotlin.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
@@ -20,13 +20,13 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import aws from "./tech/aws.png";
-import kotlin from "./tech/kotlin.png";
 
 
 import shopify from "./company/shopify.png";
 import snooper from "./company/snooper.png";
 import unimelb from "./company/unimelb.png";
 import bjut from "./company/bjut.png";
+import jr from "./company/jr.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -55,11 +55,11 @@ export {
   github,
   menu,
   close,
-  css,
-  docker,
-  figma,
+  vue,
+  spring,
+  nextjs,
   git,
-  html,
+  kotlin,
   javascript,
   mongodb,
   nodejs,
@@ -69,12 +69,11 @@ export {
   typescript,
   threejs,
   aws,
-  kotlin,
-
   shopify,
   snooper,
   unimelb,
   bjut,
+  jr,
   carrent,
   jobit,
   tripguide,
