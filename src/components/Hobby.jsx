@@ -15,7 +15,7 @@ const ExpandCard = ({
 }) => {
   return (
     <motion.div
-      variants={fadeIn("", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("", "spring", index * 0.3, 0.5)}
       key={index}
       className={`panel bg-cover bg-center bg-no-repeat	h-[80vh] rounded-[50px] text-white cursor-pointer m-[10px] relative ${
         index === activePanel ? "active" : ""

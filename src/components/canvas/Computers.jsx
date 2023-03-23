@@ -3,6 +3,41 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
+const getModelContainerStyle = (screenType) => {
+  const commonStyle = {
+    position: "absolute",
+    pointerEvents: "auto",
+  };
+
+  if (screenType === "mobile") {
+    return {
+      ...commonStyle,
+      width: "100%",
+      height: "35%",
+      top: "55%",
+      // left: "10%",
+    };
+  }
+
+  if (screenType === "tablet") {
+    return {
+      ...commonStyle,
+      width: "100%",
+      height: "25%",
+      top: "60%",
+      // left: "20%",
+    };
+  }
+
+  return {
+    ...commonStyle,
+    width: "100%",
+    height: "35%",
+    top: "50%",
+    // left: "25%",
+  };
+};
+
 const Computers = ({ whichScreen: screenType }) => {
   const computer = useGLTF("desktop_pc/scene.gltf");
 
@@ -21,11 +56,11 @@ const Computers = ({ whichScreen: screenType }) => {
       <primitive
         object={computer.scene}
         scale={
-          screenType === "mobile" ? 0.40 : screenType === "tablet" ? 0.60 : 0.70
+          screenType === "mobile" ? 0.90 : screenType === "tablet" ? 1.5 : 1.5
         }
         position={
           screenType === "mobile"
-            ? [0, -2.98, -1.0]
+            ? [0, -1.70, -1.0]
             : screenType === "tablet"
             ? [0, -3.30, -1.5]
             : [0, -3.50, -1.5]
@@ -37,26 +72,12 @@ const Computers = ({ whichScreen: screenType }) => {
 };
 
 const ComputersCanvas = () => {
-  // const [isMobile, setIsMobile] = useState(false);
-  // const [isLargeScreen, setIsLargeScreen] = useState(false);
 
   const [screenType, setScreenType] = useState("tablet");
 
-  // useEffect(() => {
-  //   const mediaQuery = window.matchMedia("(max-width: 768px)");
-  //   setIsMobile(mediaQuery.matches);
-  //   const handleMediaQueryChange = (e) => {
-  //     setIsMobile(e.matches);
-  //   };
-  //   mediaQuery.addEventListener("change", handleMediaQueryChange);
-  //   return () => {
-  //     mediaQuery.removeEventListener("change", handleMediaQueryChange);
-  //   };
-  // }, []);
-
   useEffect(() => {
     const handleScreenSizeChange = () => {
-      if (window.matchMedia("(max-width: 768px)").matches) {
+      if (window.matchMedia("(max-width: 640px)").matches) {
         setScreenType("mobile");
       } else if (window.matchMedia("(min-width: 1280px)").matches) {
         setScreenType("desktop");
@@ -75,23 +96,24 @@ const ComputersCanvas = () => {
   }, [screenType]);
 
   return (
-    <Canvas
-      frameloop="demand"
-      shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        {/* <Computers isMobile={isMobile} /> */}
-        <Computers whichScreen={screenType} />
-      </Suspense>
-      <Preload all />
-    </Canvas>
+    <div style={getModelContainerStyle(screenType)}>
+      <Canvas
+        frameloop="demand"
+        shadows
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Computers whichScreen={screenType} />
+        </Suspense>
+        <Preload all />
+      </Canvas>
+    </div>
   );
 };
 
