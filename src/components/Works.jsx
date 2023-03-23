@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, youtube } from "../assets";
 import { SectionWrapper } from "../hoc/index";
 import { projects } from "../constants/index";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -13,7 +13,8 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
+  source_link,
+  icon,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const maxWords = 70;
@@ -47,11 +48,11 @@ const ProjectCard = ({
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              onClick={() => window.open(source_link, "_blank")}
+              className="project-link_button w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
-                src={github}
+                src={icon === "github" ? github : youtube}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
               />
@@ -119,11 +120,7 @@ const Works = () => {
 
       <div className="mt-10 md:mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <ProjectCard
-            key={`project-${index}`}
-            index={index}
-            {...project}
-          />
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>

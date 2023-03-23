@@ -244,10 +244,11 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_link: "https://github.com/ASCII-768977",
+    icon: "github",
   },
   {
-    name: "Job IT",
+    name: "Easy Grade",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -265,7 +266,8 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_link: "https://www.youtube.com/watch?v=yTDXZiF4SWc&t=354s",
+    icon: "youtube",
   },
   {
     name: "Trip Guide",
@@ -286,7 +288,8 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_link: "https://github.com/ASCII-768977",
+    icon: "github",
   },
 ];
 
