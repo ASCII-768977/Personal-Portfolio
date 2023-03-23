@@ -26,6 +26,7 @@ import shopify from "./company/shopify.png";
 import snooper from "./company/snooper.png";
 import unimelb from "./company/unimelb.png";
 import bjut from "./company/bjut.png";
+import jr from "./company/jr.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -72,6 +73,7 @@ export {
   snooper,
   unimelb,
   bjut,
+  jr,
   carrent,
   jobit,
   tripguide,
