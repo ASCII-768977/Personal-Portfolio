@@ -21,9 +21,9 @@ import {
   bjut,
   jr,
   shopify,
-  carrent,
-  jobit,
-  tripguide,
+  tax,
+  easygrade,
+  aurin,
   threejs,
   icon1,
   icon2,
@@ -226,67 +226,66 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Tax Calculator",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.locate available jobs based on their current location. lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.locate available jobs based on their current location. lorem ipsum dolor sit amet, consectetur adipiscing elit,",
+      "The online tax calculator is a user-friendly tool that simplifies the process of calculating estimated taxable income. Built with React and Redux, users can input their country of residence, income year, and total taxable income to obtain an accurate estimate. The calculator offers a hassle-free experience, and users can easily access it from any device with an internet connection. With its intuitive interface and reliable functionality, the online tax calculator is an ideal solution for those seeking a quick and easy way to determine their estimated taxable income.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "redux-toolkit",
         color: "green-text-gradient",
       },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: tax,
+    source_link: "https://github.com/ASCII-768977/React-Tax-Calculator",
+    icon: "github",
   },
   {
-    name: "Job IT",
+    name: "Easy Grade",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Easy-Grade is an efficient teaching management system that allows students to submit assignments, teachers to grade them, and students to register for courses. This system utilizes key technologies such as React.js, TypeScript, TSLint, Sass, JavaScript ES6, Ant Design, Responsive Web Design, Redux, Redux-saga, Docker, MongoDB, Koa.js, Koa middleware, RESTful APIs, Postman, Tests, React-hooks, Sprint planning, Agile, and Figma. The system includes a MongoDB database to store data, a Koa.js and Node.js server, and RESTful APIs for front-end and back-end interaction. Axios is used for sending requests and the system employs reusable components built with functional components and React hooks. A global Sass style with unified naming conventions is used to avoid global variable pollution. Additionally, the team followed Test-Driven Development methodology and conducted daily stand-up meetings during Agile/Scrum project management.The system is deployed on AWS S3 and EC2 and offers an easy-to-use interface for both teachers and students to manage assignments and courses. Overall, Easy-Grade is an effective teaching management system that offers comprehensive functionality and is supported by a strong technology stack.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "redux-saga",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "nodejs",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: easygrade,
+    source_link: "https://www.youtube.com/watch?v=yTDXZiF4SWc&t=354s",
+    icon: "youtube",
   },
   {
     name: "Trip Guide",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "We've created a web platform for data analysis on Twitter, which is a popular platform for people to communicate and express opinions. Our platform focuses on analyzing Australia's sentiment and attitudes towards China, Covid-19, and happiness. To achieve this, we use Ansible for automated deployment, the Stream and Search API to collect English tweets, and the Vader_Lexicon for sentiment analysis. We also incorporate data on population age, number, and income from Aurin to generate sentiment analysis charts that help to explore different views and attitudes on the specified topics. Additionally, we've created a simple linear regression model to further explore the emotions of Australians based on the collected data. Finally, we've analyzed areas for platform improvement and future expansion plans. Our platform provides valuable insights for understanding public opinion and sentiments on important topics.",
     tags: [
       {
-        name: "nextjs",
+        name: "vue",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "flask",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "spark",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: aurin,
+    source_link: "https://www.youtube.com/watch?v=UeD7XCTFyeg&t=204s",
+    icon: "youtube",
   },
 ];
 

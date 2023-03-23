@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { github } from "../assets";
+import { github, youtube } from "../assets";
 import { SectionWrapper } from "../hoc/index";
 import { projects } from "../constants/index";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -13,7 +13,8 @@ const ProjectCard = ({
   description,
   tags,
   image,
-  source_code_link,
+  source_link,
+  icon,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const maxWords = 70;
@@ -47,11 +48,11 @@ const ProjectCard = ({
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+              onClick={() => window.open(source_link, "_blank")}
+              className="project-link_button w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
-                src={github}
+                src={icon === "github" ? github : youtube}
                 alt="source code"
                 className="w-1/2 h-1/2 object-contain"
               />
@@ -94,92 +95,6 @@ const ProjectCard = ({
   );
 };
 
-const SimpleProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-}) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-  const [shouldExpand, setShouldExpand] = useState(false);
-  const maxWords = 70;
-
-  useEffect(() => {
-    if (description.split(" ").length > maxWords) {
-      setShouldExpand(true);
-    }
-  }, [description, maxWords]);
-
-  const handleToggle = () => {
-    if (shouldExpand) {
-      setIsExpanded(!isExpanded);
-    }
-  };
-
-  const descriptionWithDots = description
-    .split(" ")
-    .slice(0, maxWords)
-    .join(" ")
-    .concat("...");
-
-  return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full min-h-[660px] relative"
-      >
-        <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
-
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="source code"
-                className="w-1/2 h-1/2 object-contain"
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p
-            className="mt-2 text-secondary text-[14px] cursor-pointer"
-            onClick={handleToggle}
-          >
-            {isExpanded || !shouldExpand ? description : descriptionWithDots}
-          </p>
-        </div>
-
-        <div className="mt-4 flex flex-wrap gap-2 absolute bottom-0.5 ">
-          {tags.map((tag, index) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
-    </motion.div>
-  );
-};
-
 const Works = () => {
   return (
     <>
@@ -191,25 +106,26 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-secondary text-[17px] max-w-4xl leading-[30px]"
         >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus
-          unde beatae velit, tempora optio fuga est veniam temporibus enim esse
-          in eum commodi reprehenderit, inventore quam vitae aliquid deleniti
-          non?Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-          laudantium adipisci sit dignissimos, fugit, expedita asperiores
-          ducimus similique placeat tempore repudiandae. Consectetur aspernatur
-          labore voluptatibus vero delectus laudantium adipisci doloribus?
+          I truly enjoy the satisfaction that comes from programming. To date, I
+          have completed several full-stack projects and continuously update a
+          variety of interesting components using HTML, CSS, and JavaScript on
+          my Github profile. I love to challenge myself by exploring new
+          technologies and frameworks, and I'm constantly looking to expand my
+          skillset. 
+          <br /> In addition to these projects, I devote a portion of
+          my time to learning new frameworks and technologies that can enhance
+          my abilities as a programmer. I enjoy staying up-to-date with the
+          latest trends in the industry and seeking out new challenges to
+          overcome. Programming has become a passion for me, and I am always
+          eager to take on new projects and expand my knowledge in the field.
         </motion.p>
       </div>
 
       <div className="mt-10 md:mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
-          <ProjectCard
-            key={`project-${index}`}
-            index={index}
-            {...project}
-          />
+          <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
       </div>
     </>

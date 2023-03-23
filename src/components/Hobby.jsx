@@ -47,7 +47,7 @@ const Hobby = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          className="mt-3 text-secondary text-[17px] max-w-4xl leading-[30px]"
         >
           Music has been a central part of my life since I was six, when I first
           picked up a cello. Over the years, I've honed my skills and performed
