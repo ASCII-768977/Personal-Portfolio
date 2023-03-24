@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { celloLogo } from "../assets";
 import { Link } from "react-router-dom";
-import { icon1, icon2, icon3 } from "../assets";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
