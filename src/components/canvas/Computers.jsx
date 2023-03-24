@@ -44,7 +44,7 @@ const Computers = ({ whichScreen: screenType }) => {
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={1} />
+      <pointLight intensity={1} position={[20,20,15]}/>
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
