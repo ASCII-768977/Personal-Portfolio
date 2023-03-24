@@ -13,6 +13,7 @@
   display: block;
 }
 
+/* Footer heartbeat */
 .heart {
   height: 10px;
   width: 10px;
@@ -45,7 +46,6 @@
     box-shadow: 10px 10px 90px #f20044;
   }
 }
-
 @keyframes heart {
   0% {
     transform: rotate(-45deg) scale(1);
@@ -60,6 +60,7 @@
   }
 }
 
+/* Footer social icons */
 .social-icon {
   position: relative;
 
@@ -102,15 +103,12 @@
   }
 }
 
-.view-more:hover {
-  color: #eee;
-  background-color: #333;
-}
-
+/* Home component text rotate */
 .txt-rotate>.wrap {
   border-right: 0.08em solid #666;
 }
 
+/* Toggle expand card */
 .panel {
   transition: all 700ms ease-in;
   flex: 0.5;
@@ -139,6 +137,7 @@
   }
 }
 
+/* Button in work component hover change color */
 .project-link_button {
   background: #000000;
   background: -webkit-linear-gradient(to right, #434343, #000000);
@@ -150,7 +149,6 @@
     background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
   }
 }
-
 
 .black-gradient {
   background: #000000;

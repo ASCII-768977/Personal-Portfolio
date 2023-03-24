@@ -4,7 +4,7 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import { toRotateText } from "../constants/index";
 
-const Hero = () => {
+const Home = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
@@ -60,11 +60,11 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText}`}>
+          <h1 className={`${styles.homeHeadText}`}>
             Hi, I'm&nbsp;
             <span className="text-[#915eff] whitespace-nowrap">Forrest</span>
           </h1>
-          <p className={`${styles.heroRotateText}`}>
+          <p className={`${styles.homeRotateText}`}>
             <span
               className="txt-rotate"
               dataPeriod="1000"
@@ -73,7 +73,7 @@ const Hero = () => {
               <span className="wrap">{text}</span>
             </span>
           </p>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.homeSubText} mt-2 text-white-100`}>
             I am a <span className="text-[#915eff]">Human Being </span>first,
             <br />a <span className="text-[#915eff]">Developer </span>second,
             <br />
@@ -103,4 +103,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;

@@ -17,16 +17,16 @@ const ProjectCard = ({
   icon,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
-  const maxWords = 70;
+  const maxWords = 500;
 
   const handleToggle = () => {
     setIsExpanded(!isExpanded);
   };
 
   const descriptionWithDots = description
-    .split(" ")
+    .split("")
     .slice(0, maxWords)
-    .join(" ")
+    .join("")
     .concat("...");
 
   return (
@@ -70,10 +70,10 @@ const ProjectCard = ({
               : description}
           </p>
 
-          {description.split(" ").length > maxWords && (
+          {description.split("").length > maxWords && (
             <button
               onClick={handleToggle}
-              className="bg-secondary py-3 px-3 text-white font-bold shadow-md shadow-primary rounded-xl w-fit-content my-3 view-more"
+              className="bg-secondary py-3 px-3 text-white font-bold shadow-md shadow-primary rounded-xl w-fit-content my-3 hover:bg-[#333333] hover:text-[#eeeeee]"
             >
               {isExpanded ? "View less" : "View more"}
             </button>
