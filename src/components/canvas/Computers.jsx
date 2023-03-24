@@ -44,7 +44,7 @@ const Computers = ({ whichScreen: screenType }) => {
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={1} />
+      <pointLight intensity={0.7} position={[0,4.9,3.3]}/>
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -56,16 +56,16 @@ const Computers = ({ whichScreen: screenType }) => {
       <primitive
         object={computer.scene}
         scale={
-          screenType === "mobile" ? 0.90 : screenType === "tablet" ? 1.5 : 1.5
+          screenType === "mobile" ? 0.9 : screenType === "tablet" ? 1.5 : 1.5
         }
         position={
           screenType === "mobile"
-            ? [0, -1.70, -1.0]
+            ? [0, -1.7, -1.0]
             : screenType === "tablet"
-            ? [0, -3.30, -1.5]
-            : [0, -3.50, -1.5]
+            ? [0, -3.3, -1.5]
+            : [0, -3.5, -1.5]
         }
-        rotation={[0, -0.25, -0.13]}
+        rotation={[0, -0.25, -0.10]}
       />
     </mesh>
   );
