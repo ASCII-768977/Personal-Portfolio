@@ -60,7 +60,7 @@ const Computers = ({ whichScreen: screenType }) => {
         }
         position={
           screenType === "mobile"
-            ? [0, -1.7, -1.0]
+            ? [0, -1.7, -1.5]
             : screenType === "tablet"
             ? [0, -3.3, -1.5]
             : [0, -3.5, -1.5]
