@@ -65,7 +65,7 @@ const Computers = ({ whichScreen: screenType }) => {
             ? [0, -3.3, -1.5]
             : [0, -3.5, -1.5]
         }
-        rotation={[0, -0.25, -0.10]}
+        rotation={[-0.005, -0.25, -0.10]}
       />
     </mesh>
   );
