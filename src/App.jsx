@@ -5,7 +5,7 @@ import {
   Contact,
   Experience,
   Mottos,
-  Hero,
+  Home,
   Navbar,
   Tech,
   Works,
@@ -19,11 +19,11 @@ const App = () => {
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
         <div
-          className="bg-hero-pattern bg-cover bg-no-repeat bg-center"
+          className="bg-home-pattern bg-cover bg-no-repeat bg-center"
           id="home"
         >
           <Navbar />
-          <Hero />
+          <Home />
         </div>
         <About />
         <Experience />

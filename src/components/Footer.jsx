@@ -22,7 +22,7 @@ const Footer = () => {
         <img src={celloLogo} alt="LOGO" className="max-w-[100px] h-auto" />
 
         <div>
-          <h3 className={styles.heroSubText}>Forrest Lin</h3>
+          <h3 className={styles.homeSubText}>Forrest Lin</h3>
           <p>Email: forrest.lin.work@gmail.com</p>
           <p>&copy; Copyright 2023. All Rights Reserved.</p>
         </div>
