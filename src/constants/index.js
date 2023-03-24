@@ -228,7 +228,7 @@ const projects = [
   {
     name: "Tax Calculator",
     description:
-      "The online tax calculator is a user-friendly tool that simplifies the process of calculating estimated taxable income. Built with React and Redux, users can input their country of residence, income year, and total taxable income to obtain an accurate estimate. The calculator offers a hassle-free experience, and users can easily access it from any device with an internet connection. With its intuitive interface and reliable functionality, the online tax calculator is an ideal solution for those seeking a quick and easy way to determine their estimated taxable income.",
+      "The online tax calculator is a user-friendly tool that simplifies the process of calculating estimated taxable income. Built with React and Redux, users can input their country of residence, income year, and total taxable income to obtain an accurate estimate. The calculator offers a hassle-free experience, and users can easily access it from any device with an internet connection. Moreover, the online tax calculator is designed with the user's privacy and security in mind. It employs advanced encryption and data protection measures to ensure that all user information remains confidential and secure. The tool also provides helpful tips and explanations to guide users through the tax calculation process, making it a useful resource for individuals and businesses alike. With its intuitive interface and reliable functionality, the online tax calculator is an ideal solution for those seeking a quick and easy way to determine their estimated taxable income while ensuring the privacy and security of their personal information.",
     tags: [
       {
         name: "react",
@@ -266,7 +266,7 @@ const projects = [
     icon: "youtube",
   },
   {
-    name: "Trip Guide",
+    name: "Sentiment Analysis",
     description:
       "We've created a web platform for data analysis on Twitter, which is a popular platform for people to communicate and express opinions. Our platform focuses on analyzing Australia's sentiment and attitudes towards China, Covid-19, and happiness. To achieve this, we use Ansible for automated deployment, the Stream and Search API to collect English tweets, and the Vader_Lexicon for sentiment analysis. We also incorporate data on population age, number, and income from Aurin to generate sentiment analysis charts that help to explore different views and attitudes on the specified topics. Additionally, we've created a simple linear regression model to further explore the emotions of Australians based on the collected data. Finally, we've analyzed areas for platform improvement and future expansion plans. Our platform provides valuable insights for understanding public opinion and sentiments on important topics.",
     tags: [
