@@ -86,4 +86,4 @@ const Hobby = () => {
   );
 };
 
-export default SectionWrapper(Hobby, "");
+export default SectionWrapper(Hobby, "hobby");

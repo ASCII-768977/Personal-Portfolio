@@ -21,9 +21,12 @@ import {
   bjut,
   jr,
   shopify,
+  realtyhive,
   tax,
   easygrade,
   aurin,
+  talkgenius,
+  eshopping,
   threejs,
   icon1,
   icon2,
@@ -44,6 +47,14 @@ const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "project",
+    title: "Projects",
+  },
+  {
+    id: "hobby",
+    title: "Life",
   },
   {
     id: "contact",
@@ -226,21 +237,91 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Realty Hive",
+    description:
+      "Introducing the ultimate Real Estate Dashboard, a powerful and intuitive platform designed to revolutionize the way agents manage properties. Built using an impressive tech stack, including React, Node, Refine, Material UI, Google Cloud, Cloudinary, and TypeScript, this dashboard streamlines the entire property management process. Agents can effortlessly check data, post new listings, edit existing properties, and search for properties with ease. The visually appealing Material UI design, combined with the robust capabilities of Refine and Google Cloud, ensures a seamless and efficient experience. Unleash the potential of your real estate business with our cutting-edge Real Estate Dashboard, where innovation meets property management.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Refine",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Node",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: realtyhive,
+    source_link: "https://github.com/ASCII-768977/Realty-Hive",
+    website_link: "https://realty-hive.netlify.app/",
+    icon: "github",
+  },
+  {
+    name: "Only 4 U",
+    description:
+      "Introducing Only 4 U, an exceptional online shopping experience for handmade, customized phone cases. Crafted with Next.js, Sanity, and Stripe, our eCommerce platform delivers a user-friendly and seamless journey, tailored to your unique style. Each one-of-a-kind phone case is lovingly crafted by skilled artisans to meet your exact specifications, ensuring a personalized touch that sets your device apart. Payment is a breeze with Stripe's secure processing, providing you with a worry-free shopping experience. Explore the creative world of Only 4 U, and elevate your phone's aesthetic with our exclusive, made-to-order cases that truly capture your individuality.",
+    tags: [
+      {
+        name: "Next",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Sanity",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Stripe",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: eshopping,
+    source_link: "https://github.com/ASCII-768977/Eshopping",
+    website_link: "https://only4u.vercel.app/",
+    icon: "github",
+  },
+  {
+    name: "Talk Genius",
+    description:
+      "Introducing TalkGenius, the ultimate chat experience powered by React, React Chat Engine, Node.js, Redux Toolkit, and ChatGPT 3.5. This innovative app allows users to log in and engage in seamless conversations with multiple participants, fostering lively interactions and enriching discussions. What sets TalkGenius apart is its built-in ChatGPT functionality, enabling users to ask questions and receive instant, AI-generated responses. Furthermore, ChatGPT will automatically complete users' sentences, ensuring smooth and coherent conversations. Discover the future of intelligent, interactive communication with TalkGenius, where technology and human connection harmoniously intertwine.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "ChatGPT",
+        color: "green-text-gradient",
+      },
+    ],
+    image: talkgenius,
+    source_link: "https://github.com/ASCII-768977/Talk-Genius",
+    website_link: "https://talk-genius.netlify.app/",
+    icon: "github",
+  },
+  {
     name: "Tax Calculator",
     description:
       "The online tax calculator is a user-friendly tool that simplifies the process of calculating estimated taxable income. Built with React and Redux, users can input their country of residence, income year, and total taxable income to obtain an accurate estimate. The calculator offers a hassle-free experience, and users can easily access it from any device with an internet connection. Moreover, the online tax calculator is designed with the user's privacy and security in mind. It employs advanced encryption and data protection measures to ensure that all user information remains confidential and secure. The tool also provides helpful tips and explanations to guide users through the tax calculation process, making it a useful resource for individuals and businesses alike. With its intuitive interface and reliable functionality, the online tax calculator is an ideal solution for those seeking a quick and easy way to determine their estimated taxable income while ensuring the privacy and security of their personal information.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "redux-toolkit",
+        name: "Redux-toolkit",
         color: "green-text-gradient",
       },
     ],
     image: tax,
     source_link: "https://github.com/ASCII-768977/React-Tax-Calculator",
+    website_link: "https://react-tax-calculator-demo.netlify.app/",
     icon: "github",
   },
   {
@@ -249,20 +330,21 @@ const projects = [
       "Easy-Grade is an efficient teaching management system that allows students to submit assignments, teachers to grade them, and students to register for courses. This system utilizes key technologies such as React.js, TypeScript, TSLint, Sass, JavaScript ES6, Ant Design, Responsive Web Design, Redux, Redux-saga, Docker, MongoDB, Koa.js, Koa middleware, RESTful APIs, Postman, Tests, React-hooks, Sprint planning, Agile, and Figma. The system includes a MongoDB database to store data, a Koa.js and Node.js server, and RESTful APIs for front-end and back-end interaction. Axios is used for sending requests and the system employs reusable components built with functional components and React hooks. A global Sass style with unified naming conventions is used to avoid global variable pollution. Additionally, the team followed Test-Driven Development methodology and conducted daily stand-up meetings during Agile/Scrum project management.The system is deployed on AWS S3 and EC2 and offers an easy-to-use interface for both teachers and students to manage assignments and courses. Overall, Easy-Grade is an effective teaching management system that offers comprehensive functionality and is supported by a strong technology stack.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "redux-saga",
-        color: "green-text-gradient",
+        name: "Redux-Saga",
+        color: "pink-text-gradient",
       },
       {
-        name: "nodejs",
-        color: "pink-text-gradient",
+        name: "Node",
+        color: "green-text-gradient",
       },
     ],
     image: easygrade,
     source_link: "https://www.youtube.com/watch?v=yTDXZiF4SWc&t=354s",
+    website_link: "",
     icon: "youtube",
   },
   {
@@ -285,6 +367,7 @@ const projects = [
     ],
     image: aurin,
     source_link: "https://www.youtube.com/watch?v=UeD7XCTFyeg&t=204s",
+    website_link: "",
     icon: "youtube",
   },
 ];

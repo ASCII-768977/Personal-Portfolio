@@ -29,9 +29,12 @@ import unimelb from "./company/unimelb.png";
 import bjut from "./company/bjut.png";
 import jr from "./company/jr.png";
 
-import tax from "./tax.png";
-import easygrade from "./easygrade.png";
-import aurin from "./aurin.png";
+import realtyhive from "./screenshots/realtyhive.png";
+import talkgenius from "./screenshots/talkgenius.png";
+import eshopping from "./screenshots/eshopping.png";
+import tax from "./screenshots/tax.png";
+import easygrade from "./screenshots/easygrade.png";
+import aurin from "./screenshots/aurin.png";
 
 import celloLogo from './celloLogo.jpg'
 import blackLogoPNG from "./blackLogoPNG.png";
@@ -76,9 +79,12 @@ export {
   unimelb,
   bjut,
   jr,
+  realtyhive,
   tax,
   easygrade,
   aurin,
+  talkgenius,
+  eshopping,
   celloLogo,
   blackLogoPNG,
   blackLogoSVG,

@@ -14,6 +14,7 @@ const ProjectCard = ({
   tags,
   image,
   source_link,
+  website_link,
   icon,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -40,13 +41,23 @@ const ProjectCard = ({
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full min-h-[660px] relative"
       >
         <div className="relative w-full h-[230px]">
-          <img
-            src={image}
-            alt="project_image"
-            className="w-full h-full object-cover rounded-2xl"
-          />
+          {website_link !== "" ? (
+            <img
+              src={image}
+              alt="project_image"
+              className="w-full h-full object-cover rounded-2xl cursor-pointer"
+              onClick={() => window.open(website_link, "_blank")}
+            />
+          ) : (
+            <img
+              src={image}
+              alt="project_image"
+              className="w-full h-full object-cover rounded-2xl"
+            />
+          )}
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+          <div className="absolute top-0 right-0 m-3 card-img_hover">
+            {/* <div className="absolute inset-0 flex justify-end m-3 card-img_hover"> */}
             <div
               onClick={() => window.open(source_link, "_blank")}
               className="project-link_button w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
@@ -95,7 +106,7 @@ const ProjectCard = ({
   );
 };
 
-const Works = () => {
+const Project = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -113,13 +124,13 @@ const Works = () => {
           variety of interesting components using HTML, CSS, and JavaScript on
           my Github profile. I love to challenge myself by exploring new
           technologies and frameworks, and I'm constantly looking to expand my
-          skillset. 
-          <br /> In addition to these projects, I devote a portion of
-          my time to learning new frameworks and technologies that can enhance
-          my abilities as a programmer. I enjoy staying up-to-date with the
-          latest trends in the industry and seeking out new challenges to
-          overcome. Programming has become a passion for me, and I am always
-          eager to take on new projects and expand my knowledge in the field.
+          skillset.
+          <br /> In addition to these projects, I devote a portion of my time to
+          learning new frameworks and technologies that can enhance my abilities
+          as a programmer. I enjoy staying up-to-date with the latest trends in
+          the industry and seeking out new challenges to overcome. Programming
+          has become a passion for me, and I am always eager to take on new
+          projects and expand my knowledge in the field.
         </motion.p>
       </div>
 
@@ -132,4 +143,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Project, "project");
