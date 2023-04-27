@@ -5,6 +5,8 @@ import { panelsData } from "../constants/index";
 import { motion } from "framer-motion";
 import { fadeIn, textVariant } from "../utils/motion";
 import { earthVideo } from "../assets/index";
+import { celloVideo } from "../assets/index";
+import { harmonicaVideo } from "../assets/index";
 
 const ExpandCard = ({
   name,
@@ -32,9 +34,22 @@ const ExpandCard = ({
 
 const Hobby = () => {
   const [activePanel, setActivePanel] = useState(2);
+  const [activeVideoIndex, setActiveVideoIndex] = useState(1);
+
+  const videos = [earthVideo, celloVideo, harmonicaVideo];
 
   const handlePanelClick = (index) => {
     setActivePanel(index);
+  };
+
+  const handlePreviousVideo = () => {
+    setActiveVideoIndex((prevState) =>
+      prevState === 0 ? videos.length - 1 : prevState - 1
+    );
+  };
+
+  const handleNextVideo = () => {
+    setActiveVideoIndex((prevState) => (prevState + 1) % videos.length);
   };
 
   return (
@@ -64,13 +79,27 @@ const Hobby = () => {
           who share that same drive.
         </motion.p>
       </div>
-      <video
-        src={earthVideo}
-        autoPlay
-        muted
-        loop
-        className="h-auto md:h-[55vh] w-[100%]"
-      ></video>
+      <div className="w-full relative">
+        <button
+          onClick={handlePreviousVideo}
+          className="bg-secondary hover:bg-content text-white font-bold py-2 px-4 rounded-lg absolute top-[40%] left-10 max-md:left-1 cursor-pointer z-10 max-sm:hidden"
+        >
+          ⬅️
+        </button>
+        <video
+          src={videos[activeVideoIndex]}
+          autoPlay
+          loop
+          controls
+          className="h-auto md:h-[55vh] w-[100%]"
+        ></video>
+        <button
+          onClick={handleNextVideo}
+          className="bg-secondary hover:bg-content text-white font-bold py-2 px-4 rounded-lg absolute top-[40%] right-10 max-md:right-1 cursor-pointer z-10 max-sm:hidden"
+        >
+          ➡️
+        </button>
+      </div>
       <div className="flex">
         {panelsData.map((panel, index) => (
           <ExpandCard
