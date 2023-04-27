@@ -47,7 +47,8 @@ import icon3 from "./icon3.svg";
 
 import headerImg from "./headerImg.svg";
 import earthVideo from "./earthVideo.mp4";
-
+import celloVideo from  "./celloVideo.mp4";
+import harmonicaVideo from "./harmonicaVideo.mp4";
 
 
 
@@ -94,4 +95,6 @@ export {
   icon3,
   headerImg,
   earthVideo,
+  celloVideo,
+  harmonicaVideo,
 };
