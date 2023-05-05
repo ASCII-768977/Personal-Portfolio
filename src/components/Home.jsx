@@ -61,8 +61,6 @@ const Home = () => {
           <p className={`${styles.homeRotateText}`}>
             <span
               className="txt-rotate"
-              dataPeriod="1000"
-              data-rotate='[ "Welcome to my space~", "Scroll down to find out more about me.", "Feel free to contact me." ]'
             >
               <span className="wrap">{text}</span>
             </span>
