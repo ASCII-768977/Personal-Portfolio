@@ -1,53 +1,47 @@
-import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
-import { toRotateText } from "../constants/index";
+import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { motion } from 'framer-motion';
+import { styles } from '../styles';
+import { ComputersCanvas } from './canvas';
+import { toRotateText } from '../constants/index';
 
 const Home = () => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState("");
-  const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
+  const [text, setText] = useState('');
+
   const period = 2000;
 
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+  const loopNum = useRef(0);
+  const isDeleting = useRef(false);
+  const delta = useRef(300 - Math.random() * 100);
 
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
-    let i = loopNum % toRotateText.length;
+  const tick = useCallback(() => {
+    let i = loopNum.current % toRotateText.length;
     let fullText = toRotateText[i];
-    let updatedText = isDeleting
+    let updatedText = isDeleting.current
       ? fullText.substring(0, text.length - 1)
       : fullText.substring(0, text.length + 1);
 
     setText(updatedText);
 
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
+    if (isDeleting.current) {
+      delta.current /= 1.9;
     }
 
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex((prevIndex) => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === "") {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex((prevIndex) => prevIndex + 1);
+    if (!isDeleting.current && updatedText === fullText) {
+      isDeleting.current = true;
+      delta.current = period;
+    } else if (isDeleting.current && updatedText === '') {
+      isDeleting.current = false;
+      loopNum.current++;
+      delta.current = 400;
+    } else if (!isDeleting.current && updatedText !== '') {
+      delta.current = 50;
     }
-  };
+  }, [text]);
+
+  useEffect(() => {
+    const ticker = setInterval(tick, delta.current);
+    return () => clearInterval(ticker);
+  }, [tick]);
 
   return (
     <section className="relative w-full h-screen mx-auto">
@@ -92,7 +86,7 @@ const Home = () => {
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
-                repeatType: "loop",
+                repeatType: 'loop',
               }}
               className="w-3 h-3 rounded-full bg-secondary mb-1"
             />
