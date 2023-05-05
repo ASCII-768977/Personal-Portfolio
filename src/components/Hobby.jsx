@@ -95,7 +95,7 @@ const Hobby = () => {
         ></video>
         <button
           onClick={handleNextVideo}
-          className="bg-secondary hover:bg-content text-white font-bold py-2 px-4 rounded-lg absolute top-[40%] right-10 max-md:right-1 cursor-pointer z-10 max-sm:top-3 max-sm:left-3"
+          className="bg-secondary hover:bg-content text-white font-bold py-2 px-4 rounded-lg absolute top-[40%] right-10 max-md:right-1 cursor-pointer z-10 max-sm:top-3 max-sm:right-3"
         >
           ➡️
         </button>
