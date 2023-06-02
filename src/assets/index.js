@@ -29,6 +29,9 @@ import unimelb from "./company/unimelb.png";
 import bjut from "./company/bjut.png";
 import jr from "./company/jr.png";
 
+import socialflare from "./screenshots/socialflare.png"
+import jobradar from "./screenshots/jobradar.png"
+import movielist from './screenshots/movielist.png';
 import realtyhive from "./screenshots/realtyhive.png";
 import talkgenius from "./screenshots/talkgenius.png";
 import eshopping from "./screenshots/eshopping.png";
@@ -81,6 +84,9 @@ export {
   bjut,
   jr,
   realtyhive,
+  socialflare,
+  jobradar,
+  movielist,
   tax,
   easygrade,
   aurin,
