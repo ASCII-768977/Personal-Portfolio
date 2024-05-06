@@ -7,9 +7,9 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 // Setting env in Netlify
-const serviceKey = process.env.EMAILJS_SERVICE_KEY;
-const templateKey = process.env.EMAILJS_TEMPLATE_KEY;
-const userKey = process.env.EMAILJS_USER_KEY;
+const serviceKey = import.meta.env.EMAILJS_SERVICE_KEY;
+const templateKey = import.meta.env.EMAILJS_TEMPLATE_KEY;
+const userKey = import.meta.env.EMAILJS_USER_KEY;
 
 const Contact = () => {
   const formRef = useRef();
@@ -37,7 +37,6 @@ const Contact = () => {
 
   const validateEmail = (email) => {
     const regex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-    console.log(process.env.REACT_APP_EMAILJS_SERVICE_KEY);
     return regex.test(email);
   };
 
