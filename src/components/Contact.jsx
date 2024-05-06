@@ -6,6 +6,11 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+// Setting env in Netlify
+const serviceKey = import.meta.env.VITE_EMAILJS_SERVICE_KEY;
+const templateKey = import.meta.env.VITE_EMAILJS_TEMPLATE_KEY;
+const userKey = import.meta.env.VITE_EMAILJS_USER_KEY;
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -66,29 +71,29 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_5ac09hm",
-        "template_idiagtg",
+        serviceKey,
+        templateKey,
         {
           from_name: form.name,
-          to_name: "Forrest Lin",
+          to_name: 'Forrest Lin',
           from_email: form.email,
-          to_email: "forrest.lin.work@gmail.com",
+          to_email: 'forrest.lin.work@gmail.com',
           message: form.message,
         },
-        "OMjIoLA0FqIWACcek"
+        userKey
       )
       .then(
         () => {
           setLoading(false);
           alert(
-            "Thank you for your message! I will get back to you as soon as possible."
+            'Thank you for your message! I will get back to you as soon as possible.'
           );
-          setForm({ name: "", email: "", message: "" });
+          setForm({ name: '', email: '', message: '' });
         },
         (error) => {
           setLoading(false);
           console.log(error);
-          alert("Something went wrong. Please try again later.");
+          alert('Something went wrong. Please try again later.');
         }
       );
   };
