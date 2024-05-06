@@ -6,6 +6,11 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+// Setting env in Netlify
+const serviceKey = process.env.EMAILJS_SERVICE_KEY;
+const templateKey = process.env.EMAILJS_TEMPLATE_KEY;
+const userKey = process.env.EMAILJS_USER_KEY;
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -67,8 +72,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_5ac09hm",
-        "template_idiagtg",
+        serviceKey,
+        templateKey,
         {
           from_name: form.name,
           to_name: 'Forrest Lin',
@@ -76,7 +81,7 @@ const Contact = () => {
           to_email: 'forrest.lin.work@gmail.com',
           message: form.message,
         },
-        "wy08oWiD6mSEJBkUj"
+        userKey
       )
       .then(
         () => {
