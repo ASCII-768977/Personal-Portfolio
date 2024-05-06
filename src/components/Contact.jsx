@@ -32,6 +32,7 @@ const Contact = () => {
 
   const validateEmail = (email) => {
     const regex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+    console.log(process.env.REACT_APP_EMAILJS_SERVICE_KEY);
     return regex.test(email);
   };
 
@@ -66,8 +67,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        process.env.REACT_APP_EMAILJS_SERVICE_KEY,
-        process.env.REACT_APP_EMAILJS_TEMPLATE_KEY,
+        "service_5ac09hm",
+        "template_idiagtg",
         {
           from_name: form.name,
           to_name: 'Forrest Lin',
