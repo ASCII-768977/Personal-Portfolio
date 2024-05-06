@@ -75,7 +75,7 @@ const Contact = () => {
           to_email: 'forrest.lin.work@gmail.com',
           message: form.message,
         },
-        process.env.REACT_APP_EMAILJS_USER_KEY
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
