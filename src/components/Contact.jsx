@@ -7,9 +7,9 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 // Setting env in Netlify
-const serviceKey = import.meta.env.EMAILJS_SERVICE_KEY;
-const templateKey = import.meta.env.EMAILJS_TEMPLATE_KEY;
-const userKey = import.meta.env.EMAILJS_USER_KEY;
+const serviceKey = import.meta.env.VITE_EMAILJS_SERVICE_KEY;
+const templateKey = import.meta.env.VITE_EMAILJS_TEMPLATE_KEY;
+const userKey = import.meta.env.VITE_EMAILJS_USER_KEY;
 
 const Contact = () => {
   const formRef = useRef();
