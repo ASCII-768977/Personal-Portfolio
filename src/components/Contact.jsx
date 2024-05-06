@@ -66,29 +66,29 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_5ac09hm",
-        "template_idiagtg",
+        process.env.REACT_APP_EMAILJS_SERVICE_KEY,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_KEY,
         {
           from_name: form.name,
-          to_name: "Forrest Lin",
+          to_name: 'Forrest Lin',
           from_email: form.email,
-          to_email: "forrest.lin.work@gmail.com",
+          to_email: 'forrest.lin.work@gmail.com',
           message: form.message,
         },
-        "OMjIoLA0FqIWACcek"
+        process.env.REACT_APP_EMAILJS_USER_KEY
       )
       .then(
         () => {
           setLoading(false);
           alert(
-            "Thank you for your message! I will get back to you as soon as possible."
+            'Thank you for your message! I will get back to you as soon as possible.'
           );
-          setForm({ name: "", email: "", message: "" });
+          setForm({ name: '', email: '', message: '' });
         },
         (error) => {
           setLoading(false);
           console.log(error);
-          alert("Something went wrong. Please try again later.");
+          alert('Something went wrong. Please try again later.');
         }
       );
   };
