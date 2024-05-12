@@ -14,6 +14,7 @@ import git from "./tech/git.png";
 import kotlin from "./tech/kotlin.png";
 import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
+import dynamodb from "./tech/dynamodb.png"
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
@@ -76,6 +77,7 @@ export {
   kotlin,
   javascript,
   mongodb,
+  dynamodb,
   nodejs,
   reactjs,
   redux,
