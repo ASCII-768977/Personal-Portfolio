@@ -43,14 +43,14 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
       >
         Experienced Full Stack Developer with two years of commercial expertise,
-        holding Bachelor's degrees of Computer Science and Master's degrees of Information
-        Technology. Proficient in crafting responsive and intuitive web
-        applications using React, Vue, and diverse backend technologies such as
-        SpringBoot, Node.js, Go service. Recognized for robust collaboration skills and a
-        solution-driven mindset, excelling particularly in Agile/Scrum
-        environments. Demonstrated capacity for rapid knowledge absorption,
-        dedicated to continuous learning, and deeply passionate about fostering
-        knowledge sharing.
+        holding Master's degrees of Information Technology and Bachelor's
+        degrees of Computer Science. Proficient in crafting responsive and
+        intuitive web applications using React, Vue, and diverse backend
+        technologies such as Go service, SpringBoot, NodeJS. Recognized for
+        robust collaboration skills and a solution-driven mindset, excelling
+        particularly in Agile/Scrum environments. Demonstrated capacity for
+        rapid knowledge absorption, dedicated to continuous learning, and deeply
+        passionate about fostering knowledge sharing.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
