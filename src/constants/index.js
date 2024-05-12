@@ -14,6 +14,7 @@ import {
   salesforce,
   nodejs,
   mongodb,
+  dynamodb,
   git,
   aws,
   nextjs,
@@ -103,42 +104,42 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Redux',
-    icon: redux,
+    name: 'Vue JS',
+    icon: vue,
+  },
+  {
+    name: 'Golang',
+    icon: golang,
   },
   {
     name: 'PHP',
     icon: php,
   },
   {
-    name: 'Vue JS',
-    icon: vue,
+    name: 'Kotlin',
+    icon: kotlin,
   },
   {
     name: 'Node JS',
     icon: nodejs,
   },
   {
-    name: 'Kotlin',
-    icon: kotlin,
-  },
-  {
     name: 'Spring Boot',
     icon: spring,
   },
-
   {
     name: 'MongoDB',
     icon: mongodb,
   },
   {
+    name: 'DynamoDB',
+    icon: dynamodb,
+  },
+  {
     name: 'AWS',
     icon: aws,
   },
-  {
-    name: 'Golang',
-    icon: golang,
-  },
+
   {
     name: 'Salesforce',
     icon: salesforce,
