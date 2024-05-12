@@ -43,7 +43,7 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
       >
         Experienced Full Stack Developer with two years of commercial expertise,
-        holding Bachelor's degrees in Computer Science and Information
+        holding Bachelor's degrees of Computer Science and Master's degrees of Information
         Technology. Proficient in crafting responsive and intuitive web
         applications using React, Vue, and diverse backend technologies such as
         SpringBoot, Node.js, Go service. Recognized for robust collaboration skills and a
