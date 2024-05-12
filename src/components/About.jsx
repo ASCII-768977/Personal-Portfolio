@@ -39,18 +39,18 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>About Me</h2>
       </motion.div>
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-4xl leading-[30px]"
       >
-        Greetings! I am an ebullient full-stack developer with a Bachelor's
-        degree in Computer Science and a Master's degree in Information
-        Technology. My forte lies in optimizing team productivity by writing
-        elegant, readable, and maintainable code. As a seasoned mentor, I am an
-        avid learner and enjoy sharing my knowledge with others. I am highly
-        skilled in collaborating and communicating with cross-functional teams,
-        particularly in Agile/Scrum settings. In addition to programming, music
-        is my greatest passion. In my leisure time, I find joy in teaching the
-        cello and performing as a street busker.
+        Experienced Full Stack Developer with two years of commercial expertise,
+        holding Bachelor's degrees in Computer Science and Information
+        Technology. Proficient in crafting responsive and intuitive web
+        applications using React, Vue, and diverse backend technologies such as
+        SpringBoot, Node.js, Go service. Recognized for robust collaboration skills and a
+        solution-driven mindset, excelling particularly in Agile/Scrum
+        environments. Demonstrated capacity for rapid knowledge absorption,
+        dedicated to continuous learning, and deeply passionate about fostering
+        knowledge sharing.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
