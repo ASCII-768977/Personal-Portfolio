@@ -10,17 +10,22 @@ import {
   reactjs,
   redux,
   tailwind,
+  golang,
+  salesforce,
   nodejs,
   mongodb,
   git,
   aws,
   nextjs,
+  php,
   spring,
   snooper,
   unimelb,
   bjut,
+  huijin,
   jr,
   shopify,
+  only4u,
   socialflare,
   jobradar,
   movielist,
@@ -98,12 +103,12 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: 'Three JS',
-    icon: threejs,
+    name: 'Redux',
+    icon: redux,
   },
   {
-    name: 'Next JS',
-    icon: nextjs,
+    name: 'PHP',
+    icon: php,
   },
   {
     name: 'Vue JS',
@@ -112,14 +117,6 @@ const technologies = [
   {
     name: 'Node JS',
     icon: nodejs,
-  },
-  {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
-    name: 'Tailwind CSS',
-    icon: tailwind,
   },
   {
     name: 'Kotlin',
@@ -138,20 +135,28 @@ const technologies = [
     name: 'AWS',
     icon: aws,
   },
+  {
+    name: 'Golang',
+    icon: golang,
+  },
+  {
+    name: 'Salesforce',
+    icon: salesforce,
+  },
 ];
 
 const experiences = [
   {
-    title: 'Co-Founder',
+    title: 'Freelance Full Stack Developer',
     company_name: 'Only 4 U',
-    icon: shopify,
+    icon: only4u,
     iconBg: '#383E56',
     date: 'Jan 2023 - Present',
     points: [
-      'Developing and maintaining web applications using Shopify and other related technologies.',
+      'Designed and developed an online booking and retail e-commerce website using Next.js and shopify for the client, integrated Stripe for seamless payment processing.',
       'Leveraged social media platforms such as Instagram to create a strong brand presence and engage with customers, resulting in a 15% increase in social media followers and improved brand awareness.',
-      'Created a user-friendly and intuitive product customization process that improved customer satisfaction and increased repeat business by 25%.',
-      'Built and maintained strong relationships with suppliers and manufacturers to ensure high-quality and timely delivery of custom products.',
+      'Modularized complex functions into smaller, reusable components, promoted code reuse and simplified future development efforts.',
+      'Established a streamlined CI/CD pipeline by using Git, Render and Vercel, increased deployment frequency by 20% and enabled frequent releases twice a week.',
     ],
   },
   {
@@ -161,10 +166,10 @@ const experiences = [
     iconBg: '#E6DEDD',
     date: 'Jan 2022 - Apr 2022',
     points: [
-      'Developing and maintaining web applications using React.js, Redux-Saga, React-Admin, SpringBoot and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Writing unit tests and integration tests for all feature and participating in code reviews and providing constructive feedback to other developer.',
+      'Developed essential features such as searching and roster for admin pages and maintained the user phone app using React, Redux-Saga, and React-admin.',
+      'Designed and implemented RestfulAPI using Java/Kotlin (SpringBoot) and Kafka for event-driven architecture.',
+      'Conducted unit tests for React components with Enzyme and backend controllers with Mockito, improved system stability.',
+      'Conducted regular code reviews and provided constructive feedback to team members, enhanced overall code quality and collaboration.',
     ],
   },
   {
@@ -174,10 +179,10 @@ const experiences = [
     iconBg: '#383E56',
     date: 'Jan 2021 - May 2021',
     points: [
-      'Led the development of an efficient student management system utilizing key technologies such as React.js, TypeScript, TSLint, Sass, and Ant Design, ensuring a responsive and user-friendly interface.',
-      'Implemented Redux and Redux-saga to manage data flow, ensuring optimal performance and data consistency throughout the application.',
-      'Designed and developed a robust RESTful API utilizing Koa.js and middleware such as koa-router and koa-bodyparser, ensuring seamless front-end and back-end communication.',
-      'Followed Test-Driven Development (TDD) approach, conducting unit tests, and utilizing tools such as Postman to ensure functionality, quality, and reliability of the application.',
+      'Spearheaded the development of a comprehensive EasyGrade student management system using Figma, React, and Node.js (MERN stack), ensuring responsiveness and efficient data handling.',
+      'Refactored and optimized legacy code related to image loading functionalities in the backend core codebase, decreased the loading time by 20%.',
+      'Automated the deployment process by creating Docker scripts to deploy the web app to AWS EC2 and AWS S3 buckets.',
+      'Successfully troubleshooted production incidents, released patches and executed hotfixes promptly.',
     ],
   },
   {
@@ -185,27 +190,25 @@ const experiences = [
     company_name: 'Unimelb',
     icon: unimelb,
     iconBg: '#E6DEDD',
-    date: 'Feb 2018 - Dec 2020',
+    date: 'Aug 2019 - Jun 2020',
     points: [
-      'Developed and deployed two websites for sentiment analysis of historical and real-time Twitter data using key technologies such as Vue.js, Flask, JQuery, CouchDB, and Nginx, ensuring efficient data collection, storage, and visualization.',
-      'Utilized Ansible and Nectar cloud service for fully automated deployment, streamlining the process of generating instances, configuring virtual environments, and building network servers.',
-      'Designed and developed intuitive UI using HTML5, CSS3, Vanilla JavaScript, and Bootstrap, ensuring seamless user experience and engagement.',
-      'Conducted sentiment analysis using Python, Spark, and Chart.js, providing insightful data visualization and meaningful analysis for specified attributes such as COVID-19.',
-      'Possess a Master of Information Technology from the University of Melbourne, providing a solid foundation in information technologies, design patterns, and programming languages such as JavaScript, Sql, and PHP.',
+      'Implemented a web crawler using Tweepy api to extract real-time tweets and processed over 3 million tweets for sentiment analysis using Spark, enabling real-time insights.',
+      'Adopted more efficient algorithms and data structures, improved the efficiency of key operations such as data retrieval and manipulation.',
+      'Conceptualized and developed a prototype product, leveraged highly reusable Vue components and ensured responsiveness across the system.',
+      'Established an efficient CI/CD pipeline using Ansible (YAML) and Docker scripts, simplified the deployment process.',
     ],
   },
   {
-    title: 'Web Designer',
-    company_name: 'BJUT',
-    icon: bjut,
+    title: 'Full Stack Developer & UI Designer',
+    company_name: 'Beijing Huijin Technology Co., Ltd.',
+    icon: huijin,
     iconBg: '#383E56',
-    date: 'Sep 2013 - Jun 2017',
+    date: 'Feb 2016 - Feb 2017',
     points: [
-      'Working as a Web Prototype Designer at Beijing Huijin Technology Co., Ltd.',
-      "Designed and completed the prototype of a website using Axure8, ensuring clear and concise representation of the website's functionality and design.",
-      "Collaborated with the development team and provided active feedback to improve the product's design and functionality.",
-      'Participated in database design and utilized Agile development methodologies, ensuring timely delivery of the product while maintaining high quality standards.',
-      'Possess a Bachelor of Computer Science from Beijing University of Technology, providing a solid foundation in computer science, software development, and programming languages such as Java, C, and Python.',
+      'Collaborated closely with the product team to implement the Shanxi Provincial Transportation Administration Page, gathered user requirements on meetings and assessed technical feasibility for the traffic management system.',
+      'Customized company websites for diverse clients using Drupal plugins and designed website prototypes using Axure8.',
+      'Translated customer requirements into technical documentation and implemented solutions using PHP, while also refactored and removed duplicate code segments to streamline execution paths and reduce redundancy.',
+      'Conducted usability testing and gathered feedback from stakeholders to iterate and improve prototype designs, ensured user-centric solutions.',
     ],
   },
 ];
@@ -389,15 +392,11 @@ const projects = [
   {
     name: 'Easy Grade',
     description:
-      'Easy-Grade is an efficient teaching management system that allows students to submit assignments, teachers to grade them, and students to register for courses. This system utilizes key technologies such as React.js, TypeScript, TSLint, Sass, JavaScript ES6, Ant Design, Responsive Web Design, Redux, Redux-saga, Docker, MongoDB, Koa.js, Koa middleware, RESTful APIs, Postman, Tests, React-hooks, Sprint planning, Agile, and Figma. The system includes a MongoDB database to store data, a Koa.js and Node.js server, and RESTful APIs for front-end and back-end interaction. Axios is used for sending requests and the system employs reusable components built with functional components and React hooks. A global Sass style with unified naming conventions is used to avoid global variable pollution. Additionally, the team followed Test-Driven Development methodology and conducted daily stand-up meetings during Agile/Scrum project management.The system is deployed on AWS S3 and EC2 and offers an easy-to-use interface for both teachers and students to manage assignments and courses. Overall, Easy-Grade is an effective teaching management system that offers comprehensive functionality and is supported by a strong technology stack.',
+      'Easy-Grade is an efficient teaching management system that allows students to submit assignments, teachers to grade them, and students to register for courses. This system utilizes key technologies such as React.js, TypeScript, TSLint, Sass, JavaScript ES6, Ant Design, Responsive Web Design, Redux, Redux-saga, Docker, MongoDB, Koa.js, Koa middleware, RESTful APIs, Postman, Tests, React-hooks, Sprint planning, Agile, and Figma. The system includes a MongoDB database to store data, and RESTful APIs for front-end and back-end interaction. Axios is used for sending requests and the system employs reusable components built with functional components and React hooks. A global Sass style with unified naming conventions is used to avoid global variable pollution. Additionally, the team followed Test-Driven Development methodology and conducted daily stand-up meetings during Agile/Scrum project management.The system is deployed on AWS S3 and EC2 and offers an easy-to-use interface for both teachers and students to manage assignments and courses. Overall, Easy-Grade is an effective teaching management system that offers comprehensive functionality and is supported by a strong technology stack.',
     tags: [
       {
         name: 'React',
         color: 'blue-text-gradient',
-      },
-      {
-        name: 'Node',
-        color: 'green-text-gradient',
       },
       {
         name: 'Redux-Saga',

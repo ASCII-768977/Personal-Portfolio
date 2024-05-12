@@ -21,6 +21,9 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import aws from "./tech/aws.png";
+import golang from "./tech/golang.png"
+import salesforce from "./tech/salesforce.png"
+import php from "./tech/php.png"
 
 
 import shopify from "./company/shopify.png";
@@ -28,6 +31,8 @@ import snooper from "./company/snooper.png";
 import unimelb from "./company/unimelb.png";
 import bjut from "./company/bjut.png";
 import jr from "./company/jr.png";
+import only4u from "./company/only4u.png"
+import huijin from "./company/huijin.jpeg"
 
 import socialflare from "./screenshots/socialflare.png"
 import jobradar from "./screenshots/jobradar.png"
@@ -78,10 +83,15 @@ export {
   typescript,
   threejs,
   aws,
+  golang,
+  php,
+  salesforce,
   shopify,
+  only4u,
   snooper,
   unimelb,
   bjut,
+  huijin,
   jr,
   realtyhive,
   socialflare,
