@@ -46,11 +46,12 @@ const About = () => {
         holding a Master's degree of Information Technology and a Bachelor's
         degree of Computer Science. Proficient in crafting responsive and
         intuitive web applications using React, Vue, and diverse backend
-        technologies such as Go service, SpringBoot, NodeJS. Recognized for
-        robust collaboration skills and a solution-driven mindset, excelling
-        particularly in Agile/Scrum environments. Demonstrated capacity for
-        rapid knowledge absorption, dedicated to continuous learning, and deeply
-        passionate about fostering knowledge sharing.
+        technologies such as Go service, SpringBoot, NodeJS, PHP Laravel.
+        Recognized for robust collaboration skills and a solution-driven
+        mindset, excelling particularly in Agile/Scrum environments.
+        Demonstrated capacity for rapid knowledge absorption, dedicated to
+        continuous learning, and deeply passionate about fostering knowledge
+        sharing.
       </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
